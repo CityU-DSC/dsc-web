@@ -1,22 +1,23 @@
 <template>
   <div>
     <AppBar />
-    <Home />
+    <div class=''>
+      <router-view></router-view>
+    </div>
+    
     <Footer />
   </div>
 </template>
 
 <script>
 import AppBar from "./components/header";
-import Home from "./components/home";
-import Footer from './components/footer';
+import Footer from "./components/footer";
 
 export default {
   name: "App",
 
   components: {
     AppBar,
-    Home,
     Footer,
   },
 
@@ -25,3 +26,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.container-fluid {
+  margin: 0 auto -50px;
+  min-height: 100%;
+}
+</style>

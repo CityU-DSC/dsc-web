@@ -12,17 +12,20 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   width: 100%;
+  opacity: 1;
   max-height: 50%;
-  border-radius: abs($number: 10);
   display: block;
-  position: absolute;
+  position: relative;
+  bottom: 0;
+  position: relative;
 }
 
 .footer p {
   text-align: center;
   line-height: 60px;
+  margin-bottom: 0;
 }
 </style>

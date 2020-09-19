@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .slider {
-  max-height: 35em;
+  max-height: 40rem;
 }
 
 .font {

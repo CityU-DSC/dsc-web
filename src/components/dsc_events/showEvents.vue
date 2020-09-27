@@ -1,24 +1,9 @@
+TODO: Theresa this is the base of event page, take those CSS out of their inline
+and put it nicely at the bottom of the page.
+
 <template>
 	<div class="event_page">
-		<v-carousel
-			cycle
-			height="400"
-			hide-delimiter-background
-			:show-arrows="false"
-		>
-			<div v-for="event in events" :key="event.id">
-				<v-carousel-item v-if="event.isHighlighted">
-					<v-sheet :style="{ 'background-color': 'black' }" height="100%">
-						<v-row
-							style="align-items: center; justify-content:center; display:flex; overflow:hidden; text-align: center; font-family: 'Courier New'"
-							class="fill-height"
-						>
-							<div style="font-size:40px; width:80%">{{ event.title }}</div>
-						</v-row>
-					</v-sheet>
-				</v-carousel-item>
-			</div>
-		</v-carousel>
+		<EventCarousel :events="events" />
 		<div>
 			<h1>
 				~ Events<v-btn
@@ -35,7 +20,7 @@
 		<b-container md-mv="4">
 			<b-row>
 				<b-col xs="12" sm="6" lg="4" v-for="event in events" :key="event.id">
-					<MatCardAdvance
+					<EventCard
 						class="MatCardAdvance"
 						:event="event"
 						v-if="
@@ -46,17 +31,22 @@
 			</b-row>
 		</b-container>
 
+		<EventDialog :showDialog='showDialog' :dialogDetails='dialogDetails'/>
 		<div style="height: 100vh"></div>
 	</div>
 </template>
 
 <script>
-	import MatCardAdvance from './matCardAdvance';
+	import EventCard from './eventCard';
+	import EventDialog from './eventDialog';
+	import EventCarousel from './eventCarousel';
+
 	export default {
 		name: 'ShowEvents',
-
 		components: {
-			MatCardAdvance,
+			EventCard,
+			EventCarousel,
+			EventDialog,
 		},
 		props: {
 			events: {
@@ -90,7 +80,7 @@
 							description:
 								'Visit ten places on our planet that are undergoing the biggest changes today.',
 							registerUrl: 'https://www.google.com',
-							isHighlighted: false,
+							isHighlighted: true,
 						},
 						{
 							id: '3',
@@ -124,13 +114,17 @@
 				},
 			},
 		},
+
 		data: () => ({
 			showBookmarkedOnly: false,
 		}),
+		method: {
+			
+		}
 	};
 </script>
 
-<style>
+<style scoped>
 	.event_page {
 		margin-top: 7rem;
 	}

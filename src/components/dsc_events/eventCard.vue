@@ -10,10 +10,10 @@
 				color="grey"
 				><v-img :src="event.image"></v-img>
 			</v-list-item-avatar>
-			<v-list-item-content style="text-shadow: 0px 0px 2px white;">
+			<v-list-item-content style="text-shadow: 0px 0px 1px white; font-weight:bold">
 				<v-list-item-title
 					class="headline"
-					style="white-space: pre-wrap; font-weight: bold; "
+					style="white-space: pre-wrap; font-weight: bolder; "
 					>{{ event.title }}</v-list-item-title
 				>
 				<v-list-item-subtitle>by {{ event.authorName }}</v-list-item-subtitle>
@@ -45,6 +45,10 @@
 					>{{ event.canRegister ? 'Register' : '' }}</a
 				>
 			</v-btn>
+			
+			<v-btn text>
+				Read More
+			</v-btn>
 			<v-spacer></v-spacer>
 			<v-btn icon v-on:click="toogleBookmark()">
 				<v-icon v-bind:style="{ color: event.bookmarked ? 'pink' : 'grey' }"
@@ -55,7 +59,10 @@
 	</v-card>
 </template>
 <script>
+
+
 	export default {
+		name: 'EventCard',
 		mounted: function() {
 			let dsc_event = JSON.parse(localStorage.getItem('dsc_event'));
 

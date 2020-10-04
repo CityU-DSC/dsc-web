@@ -19,7 +19,7 @@ and put it nicely at the bottom of the page.
 		</div>
 		<b-container md-mv="4">
 			<b-row>
-				<b-col xs="12" sm="6" lg="4" v-for="event in events" :key="event.id">
+				<b-col xs="12" sm="6" lg="4" v-for="event in events" :key="event.id" :style='{'display': (!showBookmarkedOnly || (showBookmarkedOnly && event.bookmarked)?'block':'none') }'>
 					<EventCard
 						class="MatCardAdvance"
 						:event="event"

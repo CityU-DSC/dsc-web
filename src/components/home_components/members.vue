@@ -31,32 +31,86 @@ export default {
             contacts:[
                 {
                     id: 1,
-                    name: 'Lead - Ryan Yen',
-                    img: 'https://www.publicdomainpictures.net/pictures/270000/velka/avatar-people-person-business-.jpg',
+                    name: 'Ankolika',
+                    img: 'https://i.imgur.com/p7mWrrs.jpg',
                     intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
                 },
                 {
                     id: 2,
-                    name: '2 - Ryan Yen',
-                    img: 'https://www.publicdomainpictures.net/pictures/270000/velka/avatar-people-person-business-.jpg',
+                    name: 'Eugene',
+                    img: 'https://i.imgur.com/tKEJq3B.jpg',
                     intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
                 },
                 {
                     id: 3,
-                    name: '3 - Ryan Yen',
-                    img: 'https://www.publicdomainpictures.net/pictures/270000/velka/avatar-people-person-business-.jpg',
+                    name: 'Ilias',
+                    img: 'https://i.imgur.com/eWOoYcv.png',
                     intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
                 },
                 {
                     id: 4,
-                    name: '4 - Ryan Yen',
-                    img: 'https://www.publicdomainpictures.net/pictures/270000/velka/avatar-people-person-business-.jpg',
+                    name: 'Leon',
+                    img: 'https://i.imgur.com/0xFprG3.png',
                     intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
                 },
                 {
-                    id: 5,
-                    name: '5 - Ryan Yen',
-                    img: 'https://www.publicdomainpictures.net/pictures/270000/velka/avatar-people-person-business-.jpg',
+                    id: 4,
+                    name: 'Luke',
+                    img: 'https://i.imgur.com/Gi4ECTp.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 6,
+                    name: 'Michelle',
+                    img: 'https://i.imgur.com/nYImXq8.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 7,
+                    name: 'Alan',
+                    img: 'https://i.imgur.com/CTvs13f.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 8,
+                    name: 'Rishabh',
+                    img: 'https://i.imgur.com/FiCHl0M.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 9,
+                    name: 'Ryan',
+                    img: 'https://i.imgur.com/UQutBa1.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 10,
+                    name: 'Shawn',
+                    img: 'https://i.imgur.com/9SAYR6s.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 11,
+                    name: 'Su Jin',
+                    img: 'https://i.imgur.com/DGG504Q.png',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 12,
+                    name: 'Theresa',
+                    img: 'https://i.imgur.com/A8U3bY0.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 13,
+                    name: 'Varun',
+                    img: 'https://i.imgur.com/N6jaKDu.jpg',
+                    intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
+                },
+                {
+                    id: 14,
+                    name: 'Xavier',
+                    img: 'https://i.imgur.com/S01Uo1g.jpg',
                     intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
                 },
 
@@ -79,4 +133,5 @@ export default {
   text-align: center;
   overflow: hidden;
 }
+
 </style>

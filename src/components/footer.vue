@@ -4,25 +4,23 @@
   </div>
 </template>
 
-<script>
-export default {
-  computed: {},
-};
-</script>
-
 <style lang="scss" scoped>
 .footer {
   background-color: white;
   color: black;
   width: 100%;
+  opacity: 1;
   max-height: 50%;
-  border-radius: abs($number: 10);
   display: block;
-  position: absolute;
+  position: relative;
+  bottom: 0;
+  position: relative;
+  box-shadow: 0 -5px 5px -5px #444;
 }
 
 .footer p {
   text-align: center;
   line-height: 60px;
+  margin-bottom: 0;
 }
 </style>

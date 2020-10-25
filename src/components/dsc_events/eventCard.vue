@@ -1,26 +1,27 @@
 <template>
   <v-container>
-	<EventDialog v-model="show"/>
+	<!--<EventDialog v-model="show"/>-->
     <v-card
       max-width="344"
       class="mx-auto"
-      style="position: relative; overflow: hidden; font-family: 'Courier New';"
+      style="position: relative; overflow: hidden;"
     >
       <v-list-item style="position: absolute; z-index: 1; ">
         <v-list-item-avatar
           style="background-color: white; margin-right: 1rem; "
           color="grey"
-          ><v-img :src="event.image"></v-img>
+          ><v-img :src="event.authorImage"></v-img>
         </v-list-item-avatar>
         <v-list-item-content
-          style="text-shadow: 0px 0px 1px white; font-weight:bold"
+          style="font-weight:bold"
         >
           <v-list-item-title
             class="headline"
-            style="white-space: pre-wrap; font-weight: bolder; "
+            style="text-shadow: 0px 0px 5px white, 0px 0px 5px white,  0px 0px 5px white; white-space: pre-wrap; font-weight: bolder; "
             >{{ event.title }}</v-list-item-title
           >
-          <v-list-item-subtitle>by {{ event.authorName }}</v-list-item-subtitle>
+          <v-list-item-subtitle 
+          style="text-shadow: 0px 0px 5px white, 0px 0px 5px white,  0px 0px 5px white; color: black; font-weight:bold">by {{ event.authorName }}</v-list-item-subtitle>
         </v-list-item-content>
 
         <v-list-item-icon>
@@ -50,7 +51,9 @@
           >
         </v-btn>
 
-        <v-btn text @click="show = true">
+        <v-btn text 
+        @click="onClickButton"
+        >
           Read More
         </v-btn>
         <v-spacer></v-spacer>
@@ -64,7 +67,7 @@
   </v-container>
 </template>
 <script>
-import EventDialog from "./eventDialog";
+//import EventDialog from "./eventDialog";
 export default {
   name: "EventCard",
   data() {
@@ -91,10 +94,13 @@ export default {
       this.event.bookmarked = dsc_event.bookmarked[this.event.id];
       localStorage.setItem("dsc_event", JSON.stringify(dsc_event));
     },
+    onClickButton () {
+      this.$emit('selectEvent', this.event.id)
+    }
   },
-  components: {
-    EventDialog,
-  },
+  // components: {
+  //   //EventDialog,
+  // },
   props: {
     event: {
       type: Object,

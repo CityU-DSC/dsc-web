@@ -58,19 +58,21 @@ export default {
       let dbEvents = await db.collection("events").get();
       dbEvents.forEach(event => {
         let appData = event.data();
+        appData.id = event.id;
         this.events.push({
-          id: appData.id,
-          bookmarked: appData.bookmarked,
-          canRegister: appData.canRegister,
-          description: appData.description,
-          fromDate: appData.fromDate,
-          image: appData.image,
-          isHighlighted: appData.isHighlighted,
-          organizer: appData.organizer,
-          organizerImage: appData.organizerImage,
-          registerUrl: appData.registerUrl,
-          title: appData.title,
-          toDate: appData.toDate
+          // id: appData.id,
+          // bookmarked: appData.bookmarked,
+          // canRegister: appData.canRegister,
+          // description: appData.description,
+          // fromDate: appData.fromDate,
+          // image: appData.image,
+          // isHighlighted: appData.isHighlighted,
+          // organizer: appData.organizer,
+          // organizerImage: appData.organizerImage,
+          // registerUrl: appData.registerUrl,
+          // title: appData.title,
+          // toDate: appData.toDate
+          ...appData
         })
       })
     }

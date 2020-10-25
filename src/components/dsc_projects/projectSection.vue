@@ -31,7 +31,7 @@ export default {
             cards:[
                 {
                     id: 1,
-                    image: 'https://libapps-au.s3-ap-southeast-2.amazonaws.com/accounts/44312/images/COVID-19_banner.png',
+                    image: 'https://blogs.sas.com/content/graphicallyspeaking/files/2020/02/coronavirus_covid19_dashboard.png',
                     text: 'In light of the recent impact of the novel rocona virus, we created an app that allows users to keep track of real-time COVID-19 statistics accross the world.',
                     title: 'Flutter: Covid-19 App',
                     githubLink: 'https://github.com/CityU-DSC/covid19app',
@@ -41,7 +41,7 @@ export default {
                 },
                 {
                     id: 2,
-                    image: 'https://i.imgur.com/MOqyeJv.jpg',
+                    image: 'https://media-exp1.licdn.com/dms/image/C511BAQGTeYNHljkt6A/company-background_10000/0?e=2159024400&v=beta&t=7v2Mz6JhYS6SczYHeI0Y2YzNNW5S7Qu_Yao-hiw7AuU',
                     text: 'In order to promote our organization and introduce what we do, we came up with this website. It provides information of our core members, our past projects, and oncoming events.',
                     title: 'DSC website',
                     githubLink: 'https://github.com/CityU-DSC/dsc-web',
@@ -94,5 +94,8 @@ export default {
 
 .embeded-video {
   margin: 2em 0 2em 0;
+}
+img {
+  object-fit: cover;
 }
 </style>

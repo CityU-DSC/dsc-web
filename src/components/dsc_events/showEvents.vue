@@ -1,15 +1,13 @@
-TODO: Theresa this is the base of event page, take those CSS out of their inline
-and put it nicely at the bottom of the page.
-
 <template>
   <div class="event_page">
-    <EventCarousel :events="events" />
+    <EventCarousel :events="events"/>
     <div>
       <h1>
         ~ Events
         <v-btn icon v-on:click="showBookmarkedOnly = !showBookmarkedOnly">
           <v-icon :style="{ color: showBookmarkedOnly ? 'pink' : 'grey' }"
-            >mdi-heart</v-icon
+          >mdi-heart
+          </v-icon
           >
         </v-btn>
         ~
@@ -19,9 +17,9 @@ and put it nicely at the bottom of the page.
       <b-row>
         <b-col xs="12" sm="6" lg="4" v-for="event in events" :key="event.id">
           <EventCard
-            class="MatCardAdvance"
-            :event="event"
-            v-if="
+              class="MatCardAdvance"
+              :event="event"
+              v-if="
               !showBookmarkedOnly || (showBookmarkedOnly && event.bookmarked)
             "
           />
@@ -49,20 +47,20 @@ export default {
   props: {
     events: {
       type: Array,
-      default: function() {
+      default: function () {
         return [
           {
             id: "1",
             canRegister: true,
             createdDate: new Date(),
-            title: "VERY LONG TITLEEEEEEEEEEEEE EEEasdasd asd asdas dasd asdas",
+            title: "Title 1",
             authorName: "Eugene Low",
             authorImage: "",
             bookmarked: false,
             image:
-              "https://images-na.ssl-images-amazon.com/images/I/81Vr0-VQhOL._AC_SX425_.jpg",
+                "https://blogs.sas.com/content/graphicallyspeaking/files/2020/02/coronavirus_covid19_dashboard.png",
             description:
-              "RYANYEN IS VEasdovqnuoeb vojq vjoasbnjonajsodnasl dkas jdansodnalsdkasodno RY HANDSOME asdjajivqnoebqojnqeo lqbojbeqjbeqjnoeqopjnbopneqneoqjnpjkqevqp j jpfepj onqpnqvpnkpq	pqvkns ",
+                "RYANYEN IS very handsome de eff e rfefefef	pqvkns ",
             registerUrl: "https://www.google.com",
             isHighlighted: true,
           },
@@ -70,12 +68,12 @@ export default {
             id: "2",
             canRegister: true,
             createdDate: new Date(),
-            title: "VERY LONG sd asdas dasd",
+            title: "Title 2",
             authorName: "Theresa Yip",
             bookmarked: false,
-            image: "https://cdn.vuetifyjs.com/images/cards/mountain.jpg",
+            image: "https://media-exp1.licdn.com/dms/image/C511BAQGTeYNHljkt6A/company-background_10000/0?e=2159024400&v=beta&t=7v2Mz6JhYS6SczYHeI0Y2YzNNW5S7Qu_Yao-hiw7AuU",
             description:
-              "Visit ten places on our planet that are undergoing the biggest changes today.",
+                "Visit ten places on our planet that are undergoing the biggest changes today.",
             registerUrl: "https://www.google.com",
             isHighlighted: true,
           },
@@ -83,13 +81,13 @@ export default {
             id: "3",
             canRegister: false,
             createdDate: new Date(),
-            title: "VERY LONG  asd asdas dasd",
+            title: "AWSome Day at CityU",
             authorName: "Theresa Yip",
             bookmarked: true,
             image:
-              "https://images-na.ssl-images-amazon.com/images/I/81Vr0-VQhOL._AC_SX425_.jpg",
+                "https://www.base2services.com/images/events/aws-2019@2x.jpg",
             description:
-              "Visit ten places on our planet that are undergoing the biggest changes today.",
+                "Visit ten places on our planet that are undergoing the biggest changes today.",
             registerUrl: "https://www.google.com",
             isHighlighted: true,
           },
@@ -97,13 +95,13 @@ export default {
             id: "4",
             canRegister: false,
             createdDate: new Date(),
-            title: "VERY LONG  asd asdas dasd",
+            title: "GDG DevFest",
             authorName: "Theresa Yip",
             bookmarked: true,
 
-            image: "https://cdn.vuetifyjs.com/images/cards/mountain.jpg",
+            image: "https://www.gdghk.org/wp-content/uploads/2020/10/highres_4926381061-1772x800.png",
             description:
-              "Visit ten places on our planet that are undergoing the biggest changes today.",
+                "Visit ten places on our planet that are undergoing the biggest changes today.",
             registerUrl: "https://www.google.com",
             isHighlighted: false,
           },
@@ -121,21 +119,25 @@ export default {
 
 <style scoped>
 .event_page {
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
+
 .event_page h1 {
   text-align: center;
   font-family: "Courier New";
   font-weight: 0;
   margin-top: 10px;
 }
+
 .event_page b-container {
   display: flex; /* or inline-flex */
   flex-wrap: wrap;
 }
+
 .event_page .MatCardAdvance {
   transition: 0.2s ease;
 }
+
 .event_page .MatCardAdvance:hover {
   transform: scale(1.05);
   z-index: 20;

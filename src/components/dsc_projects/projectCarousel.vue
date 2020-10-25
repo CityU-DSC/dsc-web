@@ -46,7 +46,7 @@ export default {
           title: 'Flutter: Covid-19 App',
         },
         {
-          image: 'https://mocah.org/uploads/posts/503030-advice-advise.jpg',
+          image: 'https://media-exp1.licdn.com/dms/image/C511BAQGTeYNHljkt6A/company-background_10000/0?e=2159024400&v=beta&t=7v2Mz6JhYS6SczYHeI0Y2YzNNW5S7Qu_Yao-hiw7AuU',
           subtitle: 'The very website you\'re browsing right now :) It keeps tracks of past projects and upcoming events of the CityU Developer Student Clubs',
           title: 'CityU DSC Website',
         },
@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .slider {
-  max-height: 40rem;
+  max-height: 30rem;
 }
 
 .font {

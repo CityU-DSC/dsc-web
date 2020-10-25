@@ -41,7 +41,7 @@ export default {
     return { 
       slides: [
         {
-          image: 'https://wallpapercave.com/wp/wp5315781.jpg',
+          image: 'https://media-exp1.licdn.com/dms/image/C511BAQGTeYNHljkt6A/company-background_10000/0?e=2159024400&v=beta&t=7v2Mz6JhYS6SczYHeI0Y2YzNNW5S7Qu_Yao-hiw7AuU',
           subtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
           title: 'CityU DSC',
         },

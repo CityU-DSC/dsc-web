@@ -1,28 +1,19 @@
 <template>
   <div>
-    <!--
-    <div style="margin-top: 10rem">
-      <h2>This is the rfrfroijfroijfroijfr Project page</h2>
-    </div>
-    <div style="height: 100vh">
-      <div v-for="project in projects" :key="project.id">
-        <ProjectCard  :project="project" />
-      </div>
-    </div>
-    -->
+    <ProjectCarousel />
     <ProjectSection />
   </div>
 </template>
 
 <script>
-//import ProjectCard from "./projectCard";
 import ProjectSection from "./projectSection";
+import ProjectCarousel from "./projectCarousel";
 
 export default {
   name: "ShowProject",
   components: {
-    //ProjectCard,
-    ProjectSection
+    ProjectSection,
+    ProjectCarousel,
   },
   props: {
     projects: {

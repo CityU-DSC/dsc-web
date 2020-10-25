@@ -3,8 +3,8 @@
     <Carousel />
     <SectionOne />
     <Members />
-    <SectionTwo />
-    
+<!--    <SectionTwo />-->
+    <ContactUs />
 </div>
 
 </template>
@@ -12,8 +12,9 @@
 <script>
 import Carousel from "./home_components/carousel";
 import SectionOne from './home_components/sectionOne';
-import SectionTwo from './home_components/sectionTwo';
+// import SectionTwo from './home_components/sectionTwo';
 import Members from './home_components/members';
+import ContactUs from './home_components/contactUs';
 
 export default {
   name: "Home",
@@ -21,8 +22,9 @@ export default {
   components: {
     Carousel,
     SectionOne,
-    SectionTwo,
+    // SectionTwo,
     Members,
+    ContactUs,
   },
 
   data: () => ({

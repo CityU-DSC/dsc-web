@@ -1,5 +1,4 @@
 <template>
-  <v-row justify="center">
     <v-dialog v-model="show" max-width="500px">
       <v-card>
         <v-card-title class="headline"
@@ -19,7 +18,6 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </v-row>
 </template>
 
 <script>
@@ -34,7 +32,7 @@ export default {
         return this.value;
       },
       set(value) {
-        if (!value) this.$emit("close");
+        // if (!value) this.$emit("close");
         this.$emit("input", value);
       },
     },
@@ -43,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-/* .v-dialog__container{
+.v-dialog__container{
 	display: block;
-} */
+}
 </style>

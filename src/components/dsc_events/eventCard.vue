@@ -1,6 +1,6 @@
 <template>
   <v-container>
-	<EventDialog v-model="this.show" @close='this.show=false' />
+	<EventDialog v-model="show"/>
     <v-card
       max-width="344"
       class="mx-auto"
@@ -41,16 +41,16 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn text>
+        <v-btn text v-show="event.canRegister">
           <a
             style="text-decoration: none; color: black"
             v-bind:href="event.registerUrl"
             target="_blank"
-            >{{ event.canRegister ? "Register" : "" }}</a
+            >Register</a
           >
         </v-btn>
 
-        <v-btn text @click="toggle">
+        <v-btn text @click="show = true">
           Read More
         </v-btn>
         <v-spacer></v-spacer>
@@ -90,10 +90,6 @@ export default {
       ];
       this.event.bookmarked = dsc_event.bookmarked[this.event.id];
       localStorage.setItem("dsc_event", JSON.stringify(dsc_event));
-    },
-    toggle() {
-      this.show = true;
-      console.log(this.show);
     },
   },
   components: {

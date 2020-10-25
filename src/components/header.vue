@@ -15,7 +15,7 @@
           <b-nav-item>
             <router-link to="/events">Events</router-link>
           </b-nav-item>
-          <b-nav-item> Contact Us</b-nav-item>
+          <b-nav-item  href="/#contact"> <a class="router-link-active">Contact Us</a></b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
@@ -25,23 +25,8 @@
               class="mr-sm-2"
               placeholder="Search"
             ></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button
-            >
+            <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
           </b-nav-form>
-
-          <!-- <b-nav-item-dropdown text="Lang" right>
-            <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">CH</b-dropdown-item>
-          </b-nav-item-dropdown> -->
-
-          <!-- <b-nav-item-dropdown right> -->
-          <!-- Using 'button-content' slot -->
-          <!-- <template v-slot:button-content>
-              <em>User</em>
-            </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-          </b-nav-item-dropdown> -->
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -55,19 +40,14 @@
 </script>
 
 <style scoped>
-.header-bar {
-  background-color: #ffffff;
-  color: black;
-  opacity: 1;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 10px;
-  height: 12ex;
+
+a {
+  color: #333333;
+  text-decoration: none;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
+a:hover {
+  color: darkgrey;
+  text-decoration: none;
 }
 </style>

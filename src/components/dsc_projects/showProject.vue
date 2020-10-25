@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!--
     <div style="margin-top: 10rem">
       <h2>This is the rfrfroijfroijfroijfr Project page</h2>
     </div>
@@ -8,16 +9,20 @@
         <ProjectCard  :project="project" />
       </div>
     </div>
+    -->
+    <ProjectSection />
   </div>
 </template>
 
 <script>
-import ProjectCard from "./projectCard";
+//import ProjectCard from "./projectCard";
+import ProjectSection from "./projectSection";
 
 export default {
   name: "ShowProject",
   components: {
-    ProjectCard,
+    //ProjectCard,
+    ProjectSection
   },
   props: {
     projects: {

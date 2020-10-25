@@ -15,6 +15,7 @@
   position: relative;
   bottom: 0;
   position: relative;
+  box-shadow: 0 -5px 5px -5px #444;
 }
 
 .footer p {

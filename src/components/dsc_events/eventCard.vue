@@ -6,22 +6,22 @@
       class="mx-auto"
       style="position: relative; overflow: hidden;"
     >
-      <v-list-item style="position: absolute; z-index: 1; ">
+      <v-list-item style="background-color: white; position: relative; z-index: 1; ">
         <v-list-item-avatar
           style="background-color: white; margin-right: 1rem; "
           color="grey"
-          ><v-img :src="event.authorImage"></v-img>
+          ><v-img :src="event.organizerImage"></v-img>
         </v-list-item-avatar>
         <v-list-item-content
           style="font-weight:bold"
         >
           <v-list-item-title
             class="headline"
-            style="text-shadow: 0px 0px 5px white, 0px 0px 5px white,  0px 0px 5px white; white-space: pre-wrap; font-weight: bolder; "
+            style="white-space: pre-wrap; font-weight: bolder; "
             >{{ event.title }}</v-list-item-title
           >
           <v-list-item-subtitle 
-          style="text-shadow: 0px 0px 5px white, 0px 0px 5px white,  0px 0px 5px white; color: black; font-weight:bold">by {{ event.authorName }}</v-list-item-subtitle>
+          style="color: black; font-weight:bold">by {{ event.organizer }}</v-list-item-subtitle>
         </v-list-item-content>
 
         <v-list-item-icon>
@@ -80,7 +80,7 @@ export default {
 
     if (!dsc_event) dsc_event = {};
     if (!dsc_event.bookmarked) dsc_event.bookmarked = {};
-    if (dsc_event.bookmarked[this.event.id] == undefined)
+    if (dsc_event.bookmarked[this.event.id] === undefined)
       dsc_event.bookmarked[this.event.id] = false;
     localStorage.setItem("dsc_event", JSON.stringify(dsc_event));
     this.event.bookmarked = dsc_event.bookmarked[this.event.id];

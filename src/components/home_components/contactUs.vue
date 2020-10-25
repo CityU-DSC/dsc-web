@@ -36,9 +36,9 @@
                 v-model="submission.description"
             ></v-textarea>
           </v-row>
-          <v-row style="display: block"  align="center" justify="center">
+          <v-row style="display: block" class="mt-3" align="center" justify="center">
             <div class="submit-button">
-              <v-btn style='margin-right: 2rem;' @click="submit">Submit</v-btn>
+              <v-btn class="mr-3" @click="submit">Submit</v-btn>
               <v-btn @click="reset">Reset</v-btn>
             </div>
           </v-row>
@@ -86,6 +86,7 @@ export default {
 .contactUs{
   text-align: center;
   align-content: center;
+  margin-bottom: 5rem;
 }
 .contactUs h3 {
   margin-top: 2rem;

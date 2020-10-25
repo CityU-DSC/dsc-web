@@ -1,12 +1,12 @@
 <template>
 	<v-dialog v-model="show" persistent max-width="500px">
 		<v-card>
-			<v-img :src="eventItem.image"></v-img>
+			<v-img :src="eventItem.image" max-height="200px"></v-img>
 			<v-list-item>
 				<v-list-item-avatar
 					style="background-color: white; margin-right: 1rem; "
 					color="grey"
-					><v-img :src="eventItem.authorImage"></v-img>
+					><v-img :src="eventItem.organizerImage"></v-img>
 				</v-list-item-avatar>
 				<v-list-item-content
 					style=""
@@ -14,7 +14,7 @@
 					<v-list-item-title
 						class="headline"
 						style="white-space: pre-wrap;"
-						>by {{ eventItem.authorName }}</v-list-item-title
+						>by {{ eventItem.organizer }}</v-list-item-title
 					>
 				</v-list-item-content>
 

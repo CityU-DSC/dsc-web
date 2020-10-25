@@ -49,13 +49,14 @@ export default {
   },
   mounted(){
     this.selectedEvents = this.events.filter(event => event.isHighlighted);
+    console.log(this.selectedEvents);
   },
 };
 </script>
 
 <style scoped>
 .slider {
-  max-height: 30rem;
+  max-height: 40rem;
 }
 
 .font {

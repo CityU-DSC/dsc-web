@@ -25,13 +25,8 @@
 </template>
 
 <script>
-import VueFlip from 'vue-flip';
 
 export default {
-    components: {
-    'vue-flip': VueFlip
-    },
-
     data() {
         return {
             contacts:[

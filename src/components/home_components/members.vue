@@ -21,18 +21,36 @@
         </b-card>
       </b-collapse>
     </b-card>
+    
+    <vue-flip :active-hover="true" width="200px" height="50px" 
+        v-for='contact in contacts'
+        :key="contact.id">
+        <!-- :img-src='contact.img'> -->
+      <template v-slot:front class="front">
+        front
+      </template>
+      <template v-slot:back class="back">
+        back
+      </template>
+    </vue-flip>
   </div>
 </template>
 
 <script>
+import VueFlip from 'vue-flip';
+
 export default {
+    components: {
+    'vue-flip': VueFlip
+    },
+
     data() {
         return {
             contacts:[
                 {
                     id: 1,
                     name: 'Ankolika',
-                    img: require('../../assets/images/ankolika.jpeg'),//'https://i.imgur.com/p7mWrrs.jpg'
+                    img: require('../../assets/images/ankolika.jpg'),//'https://i.imgur.com/p7mWrrs.jpg'
                     intro: 'Reading books, watching shows!',
                 },
                 {
@@ -44,13 +62,13 @@ export default {
                 {
                     id: 3,
                     name: 'Ilias',
-                    img: require('../../assets/images/ilias.png'),//'https://i.imgur.com/eWOoYcv.png',
+                    img: require('../../assets/images/ilias.jpg'),//'https://i.imgur.com/eWOoYcv.png',
                     intro: 'History, Poetry, and a little bit of Machine Learning are my cup of tea :D',
                 },
                 {
                     id: 4,
                     name: 'Leon',
-                    img: require('../../assets/images/leon.png'),//'https://i.imgur.com/0xFprG3.png',
+                    img: require('../../assets/images/leon.jpg'),//'https://i.imgur.com/0xFprG3.png',
                     intro: 'Robotics lover, Frontend engineer/learner, avid gamer\nLoves bringing virtual, unrealistic ideas to the ground through software and hardware engineering',
                 },
                 {
@@ -73,42 +91,48 @@ export default {
                 },
                 {
                     id: 8,
+                    name: 'Denny',
+                    img: require('../../assets/images/denny.jpg'),
+                    intro: 'Most likely coding, gaming, reading or pumping ungodly amount of music into his ears',
+                },
+                {
+                    id: 9,
                     name: 'Rishabh',
                     img: require('../../assets/images/rishabh.jpg'),//'https://i.imgur.com/FiCHl0M.jpg',
                     intro: 'Constantly challenging myself to learn and grow. Passionate Coder and an amature Guitarist',
                 },
                 {
-                    id: 9,
+                    id: 10,
                     name: 'Ryan',
                     img: require('../../assets/images/ryan.jpg'),//'https://i.imgur.com/UQutBa1.jpg'
                     intro: 'Hello, My name is Ryan yen~ nice to meet you!!',
                 },
                 {
-                    id: 10,
+                    id: 11,
                     name: 'Shawn',
                     img: require('../../assets/images/shawn.jpg'),//'https://i.imgur.com/9SAYR6s.jpg',
                     intro: 'Professional incel',
                 },
                 {
-                    id: 11,
+                    id: 12,
                     name: 'Su Jin',
-                    img: require('../../assets/images/sujin.png'),//'https://i.imgur.com/DGG504Q.png',
+                    img: require('../../assets/images/sujin.jpg'),//'https://i.imgur.com/DGG504Q.png',
                     intro: 'I always strive for improvement, but not perfection',
                 },
                 {
-                    id: 12,
+                    id: 13,
                     name: 'Theresa',
-                    img: require('../../assets/images/theresa.jpeg'),//'https://i.imgur.com/A8U3bY0.jpg',
+                    img: require('../../assets/images/theresa.jpg'),//'https://i.imgur.com/A8U3bY0.jpg',
                     intro: 'Tech gadgets, productivity apps, cats and coffee!',
                 },
                 {
-                    id: 13,
+                    id: 14,
                     name: 'Varun',
                     img: require('../../assets/images/varun.jpg'),//'https://i.imgur.com/N6jaKDu.jpg',
                     intro: 'Cricket. Gamer. Beleiver',
                 },
                 {
-                    id: 14,
+                    id: 15,
                     name: 'Xavier',
                     img: require('../../assets/images/xavier.jpg'),//'https://i.imgur.com/S01Uo1g.jpg',
                     intro: 'A novice delving into the realm of deep learning',

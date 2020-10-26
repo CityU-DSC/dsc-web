@@ -21,18 +21,6 @@
         </b-card>
       </b-collapse>
     </b-card>
-    
-    <vue-flip :active-hover="true" width="200px" height="50px" 
-        v-for='contact in contacts'
-        :key="contact.id">
-        <!-- :img-src='contact.img'> -->
-      <template v-slot:front class="front">
-        front
-      </template>
-      <template v-slot:back class="back">
-        back
-      </template>
-    </vue-flip>
   </div>
 </template>
 

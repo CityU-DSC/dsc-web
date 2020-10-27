@@ -4,17 +4,17 @@ import ShowEvents from "./components/dsc_events/showEvents.vue";
 
 export const routes = [
   {
-    path: "/",
+    path: "/dsc-web/",
     component: Home,
     name: "home-page",
   },
   {
-    path: "/projects",
+    path: "/dsc-web/projects",
     component: ShowProjects,
     name: "dsc-projects",
   },
   {
-    path: "/events",
+    path: "/dsc-web/events",
     component: ShowEvents,
     name: "dsc-events",
   },

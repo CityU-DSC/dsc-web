@@ -7,15 +7,15 @@
 
       <b-collapse class="" id="nav-collapse" is-nav>
         <b-navbar-nav class="">
-          <b-nav-item> <router-link to="/dsc-web/">Home</router-link> </b-nav-item>
-          <b-nav-item href="/dsc-web/#one"> <a class="router-link-active">Intro</a></b-nav-item>
+          <b-nav-item> <router-link to="/">Home</router-link> </b-nav-item>
+          <b-nav-item href="/#one"> <a class="router-link-active">Intro</a></b-nav-item>
           <b-nav-item>
-            <router-link to="/dsc-web/projects">Projects</router-link>
+            <router-link to="/projects/">Projects</router-link>
           </b-nav-item>
           <b-nav-item>
-            <router-link to="/dsc-web/events">Events</router-link>
+            <router-link to="/events/">Events</router-link>
           </b-nav-item>
-          <b-nav-item  href="/dsc-web/#contact"> <a class="router-link-active">Contact Us</a></b-nav-item>
+          <b-nav-item  href="/#contact"> <a class="router-link-active">Contact Us</a></b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">

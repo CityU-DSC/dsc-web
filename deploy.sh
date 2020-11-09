@@ -14,7 +14,7 @@ cd docs
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy 1.1'
 
 # if you are deploying to https://<USERNAME>.github.io
 git push -f git@github.com:cityu-dsc/cityu-dsc.github.io.git master

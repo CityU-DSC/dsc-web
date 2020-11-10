@@ -2,6 +2,6 @@ module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  publicPath: '/',
+  publicPath: '/dsc-web/',
   outputDir: 'docs',
 }

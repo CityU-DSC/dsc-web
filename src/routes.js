@@ -4,18 +4,21 @@ import ShowEvents from "./components/dsc_events/showEvents.vue";
 
 export const routes = [
   {
-    path: "/dsc-web/",
+    path: "/",
     component: Home,
     name: "home-page",
+    meta: { scrollToTop: true },
   },
   {
-    path: "/dsc-web/projects",
+    path: "/projects",
     component: ShowProjects,
     name: "dsc-projects",
+    meta: { scrollToTop: true },
   },
   {
-    path: "/dsc-web/events",
+    path: "/events",
     component: ShowEvents,
     name: "dsc-events",
+    meta: { scrollToTop: true },
   },
 ];

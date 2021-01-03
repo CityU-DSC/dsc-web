@@ -42,17 +42,17 @@ export default {
       slides: [
         {
           image: 'https://media-exp1.licdn.com/dms/image/C511BAQGTeYNHljkt6A/company-background_10000/0?e=2159024400&v=beta&t=7v2Mz6JhYS6SczYHeI0Y2YzNNW5S7Qu_Yao-hiw7AuU',
-          subtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+          subtitle: 'A Google supported student developer community',
           title: 'CityU DSC',
         },
         {
           image: 'https://mocah.org/uploads/posts/503030-advice-advise.jpg',
-          subtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+          subtitle: 'Peer-to-peer learning through project collaborations',
           title: 'CityU DSC',
         },
         {
           image: 'https://images2.alphacoders.com/698/698137.jpg',
-          subtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+          subtitle: 'Programming learning and development for real life challenges',
           title: 'CityU DSC',
         },
       ],
